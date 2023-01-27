@@ -3,7 +3,7 @@
 
 Name:         sogo
 Version:      5.8.0
-Release:      1%{?dist}
+Release:      2
 License:      GPL
 URL:          https://sogo.nu/
 Group:        Productivity/Groupware
@@ -324,6 +324,12 @@ fi
 
 # ********************************* changelog *************************
 %changelog
+* Fri Jan 27 2023 Sander Hoentjen <shoentjen@antagonist.nl> 5.8.0-2
+- no rm -rf buildroot (shoentjen@antagonist.nl)
+
+* Fri Jan 27 2023 Sander Hoentjen <shoentjen@antagonist.nl>
+- no rm -rf buildroot (shoentjen@antagonist.nl)
+
 * Fri Jan 27 2023 Sander Hoentjen 5.8.0-1
 - Initial Fedora package
 
