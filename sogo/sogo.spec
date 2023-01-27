@@ -325,7 +325,7 @@ fi
 
 # ********************************* changelog *************************
 %changelog
-* Fri Jan 27 2023 Sander Hoentjen <sander@hoentjen.eu> - 5.8.0-1
+* Fri Jan 27 2023 Sander Hoentjen 5.8.0-1
 - Initial Fedora package
 
 * Thu May 27 2021 Inverse inc. <support@inverse.ca>
