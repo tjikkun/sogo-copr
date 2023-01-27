@@ -218,8 +218,7 @@ SOPE is a framework for developing web applications and services. The
 name "SOPE" (SKYRiX Object Publishing Environment) is inspired by ZOPE.
 
 %prep
-rm -fr ${RPM_BUILD_ROOT}
-%setup -q -n SOPE
+%autosetup -n SOPE
 
 # ****************************** build ********************************
 %build

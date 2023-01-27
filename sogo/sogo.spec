@@ -147,7 +147,6 @@ Requires:     sope-cards
 SOPE versit parsing library for iCal and VCard formats
 
 %prep
-rm -fr ${RPM_BUILD_ROOT}
 %autosetup -p1 -n SOGo-%{version}
 
 %build
