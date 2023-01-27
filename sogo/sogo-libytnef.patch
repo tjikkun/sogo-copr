@@ -1,0 +1,11 @@
+--- ./SoObjects/Mailer/SOGoTNEFMailBodyPart.m.orig	2023-01-27 19:58:08.853586597 +0100
++++ ./SoObjects/Mailer/SOGoTNEFMailBodyPart.m	2023-01-27 20:02:03.477453695 +0100
+@@ -40,7 +40,7 @@
+ 
+ #import <SoObjects/Mailer/NSData+SMIME.h>
+ 
+-#import <ytnef.h>
++#import <libytnef/ytnef.h>
+ 
+ #import "SOGoTNEFMailBodyPart.h"
+ 
