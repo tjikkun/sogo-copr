@@ -8,7 +8,7 @@ License:      GPL
 URL:          https://sogo.nu/
 Group:        Productivity/Groupware
 Source:       https://packages.sogo.nu/sources/SOGo-%{version}.tar.gz
-Patch0:       sogo-libytnef.patch
+#Patch0:       sogo-libytnef.patch
 #Requires:     gnustep-base >= 1.23
 #Requires:     httpd
 #Requires:     lasso
@@ -151,6 +151,8 @@ SOPE versit parsing library for iCal and VCard formats
 
 %build
 #. /usr/lib64/GNUstep/Makefiles/GNUstep.sh
+sed -i 's@#import <ytnef.h>@#import <libytnef/ytnef.h>@' SoObjects/Mailer/SOGoTNEFMailBodyPart.m
+
 ./configure --disable-debug %saml2_cfg_opts %mfa_cfg_opts %sodium_cfg_opts
 
 %py3_shebang_fix .
