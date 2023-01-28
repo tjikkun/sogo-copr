@@ -26,17 +26,20 @@ Source:       https://packages.sogo.nu/sources/SOGo-%{version}.tar.gz
 #Requires:     sope-core
 #Requires:     sope-ldap
 #Requires:     ytnef
+BuildRequires:  gcc-objc
 BuildRequires:  gnustep-base
 BuildRequires:  gnustep-base-devel
-BuildRequires:  gcc-objc
-BuildRequires:  make
 BuildRequires:  gnustep-make
 BuildRequires:  lasso-devel
 BuildRequires:  libcurl-devel
 BuildRequires:  libmemcached-devel
 BuildRequires:  liboath-devel
 BuildRequires:  libsodium-devel
+BuildRequires:  libytnef-devel
 BuildRequires:  libzip-devel
+BuildRequires:  make
+BuildRequires:  python3-devel
+BuildRequires:  python3-rpm-macros
 BuildRequires:  sope-appserver-devel
 BuildRequires:  sope-core-devel
 BuildRequires:  sope-gdl1-devel
@@ -44,8 +47,6 @@ BuildRequires:  sope-ldap-devel
 BuildRequires:  sope-mime-devel
 BuildRequires:  sope-sbjson-devel
 BuildRequires:  sope-xml-devel
-BuildRequires:  libytnef-devel
-BuildRequires:  python3-rpm-macros
 Summary:      SOGo
 
 %define saml2_cfg_opts "--enable-saml2"
