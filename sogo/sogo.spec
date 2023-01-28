@@ -3,7 +3,7 @@
 
 Name:         sogo
 Version:      5.8.0
-Release:      3
+Release:      4
 License:      GPL
 URL:          https://sogo.nu/
 Group:        Productivity/Groupware
@@ -326,6 +326,9 @@ fi
 
 # ********************************* changelog *************************
 %changelog
+* Sat Jan 28 2023 Sander Hoentjen <shoentjen@antagonist.nl> 5.8.0-4
+- Switch from patch to sed, easier with tito (shoentjen@antagonist.nl)
+
 * Fri Jan 27 2023 Sander Hoentjen <shoentjen@antagonist.nl> 5.8.0-3
 - move patch to src (shoentjen@antagonist.nl)
 
