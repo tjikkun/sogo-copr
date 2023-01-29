@@ -152,8 +152,7 @@ SOPE versit parsing library for iCal and VCard formats
 
 %build
 #. /usr/lib64/GNUstep/Makefiles/GNUstep.sh
-sed -i 's@#import <ytnef.h>@#import <libytnef/ytnef.h>@' SoObjects/Mailer/SOGoTNEFMailBodyPart.m
-
+echo "ADDITIONAL_INCLUDE_DIRS += -I/usr/include/libytnef/" >> SoObjects/Mailer/GNUmakefile.preamble
 ./configure --disable-debug %saml2_cfg_opts %mfa_cfg_opts %sodium_cfg_opts
 
 %py3_shebang_fix .
