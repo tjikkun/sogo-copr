@@ -3,7 +3,7 @@
 
 Name:         sogo
 Version:      5.8.0
-Release:      5
+Release:      6
 License:      GPL
 URL:          https://sogo.nu/
 Group:        Productivity/Groupware
@@ -326,6 +326,9 @@ fi
 
 # ********************************* changelog *************************
 %changelog
+* Sun Jan 29 2023 Sander Hoentjen <shoentjen@antagonist.nl> 5.8.0-6
+- Fix libytnef linking (shoentjen@antagonist.nl)
+
 * Sat Jan 28 2023 Sander Hoentjen <shoentjen@antagonist.nl> 5.8.0-5
 - Add python3-devel for py3_shebang_fix (shoentjen@antagonist.nl)
 
